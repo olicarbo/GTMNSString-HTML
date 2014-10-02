@@ -16,11 +16,6 @@ Pod::Spec.new do |s|
   }
   s.platform = :ios
   s.source_files = '*.{h,m}'
-  s.exclude_files = 'GTMNSString+HTML.m'
   s.compiler_flags = '-w' # Disable all warnings
-  
-  s.subspec 'no-arc' do |sp|
-    sp.source_files = 'GTMNSString+HTML.m'
-    sp.requires_arc = false
-  end
+  s.requires_arc = false
 end
