@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
     :commit => '57cc38f106911d9d4ee73db67fcaa6df681b51bc' 
   }
   s.platform = :ios
-  s.source_files = '*.{h,m}'.exclude('GTMNSString+HTML.m')
+  s.source_files = FileList['*.{h,m}'].exclude('GTMNSString+HTML.m')
   s.requires_arc = true
   s.compiler_flags = '-w' # Disable all warnings
   
