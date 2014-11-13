@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   }
   s.source   = {  
     :git => 'https://github.com/olicarbo/GTMNSString-HTML.git', 
-    :commit => '154f12e0b01d9195abe1f99cdcb28590cc994e58' 
+    :tag => "RL_#{s.version}"
   }
   s.platform = :ios
   s.source_files = '*.{h,m}'
